@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 	<head>
-
+		<title>Basic fotorama</title>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="">
 		<meta name="author" content="">
 
-		<title>Blog Home - Start Bootstrap Template</title>
+		<title>IN enginreenig</title>
 
 		<!-- Bootstrap Core CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -17,18 +17,21 @@
 		<!-- Custom CSS -->
 		<link href="css/blog-home.css" rel="stylesheet">
 
-		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]-->
+		<!-- jQuery -->
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="js/INFunctions.js"></script>
+		<script src="fotorama.js"></script>
 
+		<!-- Bootstrap Core JavaScript -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Fotorama -->
+		<link href="fotorama.css" rel="stylesheet">
+
+		<!-- Just don’t want to repeat this prefix in every img[src] -->
+		<!-- <base href="http://s.fotorama.io/okonechnikov/"> -->
 	</head>
 
 	<body>
-
-		<!-- Navigation -->
 		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 			<div class="container">
 				<!-- Brand and toggle get grouped for better mobile display -->
@@ -62,8 +65,6 @@
 			</div>
 			<!-- /.container -->
 		</nav>
-
-		<!-- Page Content -->
 		<div class="container">
 			<header>
 				<img class="img-responsive" src="images/logo.png">
@@ -88,9 +89,13 @@
 					</section>
 					<section class="gallery ">
 						<h1 class="page-header"> גלריית העבודות שלנו </h1>
-						<p>
-							המכונה גם "בניה בת קיימה" היא גישה מערכתית כוללת לתכנון, לבנייה ולתפעול של בנינים במטרה לחסוך אנרגיה, מים וחומרי גלם, המיושמת משלב התכנון המוקדם ועד לשימוש בבניין.מטרת הבנייה הירוקה ליצור סביבת שהייה (מגורים /עבודה ועוד) בריאה ונוחה תוך הימנעות, ככל האפשר, מפגיעה במשאבים טבעיים מתכלים ובאיכות הסביבה. בנייה ירוקה באה לידי ביטוי בשימוש בחומרים ידידותיים לסביבה ובחומרים ממוחזרים ותכנון שיאפשר חיסכון מקסימלי באנרגיה.
-						</p>
+						<div class="fotorama" data-width="700" data-ratio="700/467" data-max-width="100%">
+			<img src="images/1.jpg">
+			<img src="images/2.jpg">
+			<img src="images/3.jpg">
+			<img src="images/4.jpg">
+			<img src="images/5.jpg">
+		</div>
 					</section>
 					<section class="cusSrevise ">
 						<h1 class="page-header"> שירות לקוחות </h1>
@@ -111,10 +116,13 @@
 
 					<!-- Side Widget Well -->
 					<div class="well">
-						<h4>צרו קשר ונחזור בהקדם</h4>
-						<p>
-							צור קשר. מגדל לשירותך בכל נושא הקשור לחיסכון, ביטוח ושירותים פיננסיים מענה ראשוני לפנייה באינטרנט יענה תוך שני ימי עסקים. בחר מהו נושא פנייתך: קבלת הצעה. מידע אישי. תביעות.
-						</p>
+						<h4 class="contact">צרו קשר ונחזור בהקדם</h4>
+						<form  method="post">
+						        <input type="text" name="firstname" placeholder="הכנס שם מלא.." /> 
+						        <input type="text" name="phone" placeholder="מספר פלאפון.."/>
+						        <input type="text" name="mail" placeholder="אימייל.."/>
+						        <input type="submit" value="שלח" id="submitMail"/>
+						</form>
 					</div>
 
 				</div>
@@ -131,14 +139,19 @@
 			</footer>
 
 		</div>
-		<!-- /.container -->
 
-		<!-- jQuery -->
-		<script src="js/jquery.js"></script>
-		<script src="js/INFunctions.js"></script>
-		<!-- Bootstrap Core JavaScript -->
-		<script src="js/bootstrap.min.js"></script>
+		<!-- Fotorama -->
+		<!-- <div class="fotorama" data-width="700" data-ratio="700/467" data-max-width="100%">
+			<img src="images/1.jpg">
+			<img src="images/2.jpg">
+			<img src="images/3.jpg">
+			<img src="images/4.jpg">
+			<img src="images/5.jpg">
+		</div> -->
 
+		<!-- © -->
+		<!-- <p>
+			Photos <a href="http://okonet.ru/">by Andrey Okonetchnikov</a>
+		</p> -->
 	</body>
-
 </html>

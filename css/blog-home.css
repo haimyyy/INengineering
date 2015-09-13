@@ -39,3 +39,41 @@ width: 100%;
 .col-md-8 > section{
 	display:none;
 }
+.page-header{
+	    margin-top: 5px;
+}
+.fotorama__nav__frame.fotorama__active .fotorama__dot {
+    width: 12px !important;
+    height: 12px !important;
+    border-width: 6px !important;
+}
+.fotorama__nav--dots .fotorama__nav__frame {
+    width: 27px !important;
+    height: 28px !important;
+}
+.fotorama__dot {
+    width: 10px !important;
+    height: 10px !important;
+  }
+  input{
+  	    border-radius: 10px;
+    margin: 5px 3px 5px 5px;
+    border: 1px solid gray;
+    padding: 5px 7px 2px 4px;
+    width: 62%;
+  }
+  #submitMail{
+  	    padding: 5px 6px 5px 7px;
+    /* float: left; */
+    width: 27%;
+    margin: 10px 0px 0 0;
+    background-color: dimgrey;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 17px;
+    position: relative;
+  }
+  .contact{
+  	font-size: 22px;
+    font-weight: 500;
+  }
