@@ -97,4 +97,17 @@ input {
     width: 62%;
         height: 60px;
 }
+.well{
+	    float: right;
+}
+@media screen and (max-width: 600px) {
+   
+    .col-md-4{
+    	float:right;
+    }
+    .navbar-nav > li{
+    	float:none;
+    }
+    .fotorama{}
+}
 

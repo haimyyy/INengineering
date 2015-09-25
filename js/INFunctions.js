@@ -5,6 +5,19 @@ $(document).on('click',".nav li", function(){
 	});
 	var me = $(this).attr('class');
 	$('section.'+me).show();
+	
+	// $("#getw").click(function() {
+  // showWidth( "window", $( window ).width() );
+// });
+	if($( window ).width()<600){
+		$('.navbar-toggle').trigger('click');
+	}
+});
+$(document).ready(function(){
+	if($( window ).width()<600){
+		$('div.fotorama').attr('data-width','300');
+	}else
+	$('div.fotorama').attr('data-width','700');
 });
 $(document).on('click',".navbar-brand", function(){
 	$.each(navList, function(index,val){
