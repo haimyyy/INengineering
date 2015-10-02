@@ -89,7 +89,7 @@ input {
 	line-height: 30px;
 	font-size: 18px;
 }
-#msg {
+#message {
 	border-radius: 10px;
 	margin: 5px 3px 5px 5px;
 	border: 1px solid gray;
