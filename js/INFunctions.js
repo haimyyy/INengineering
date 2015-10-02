@@ -29,15 +29,15 @@ $(document).on('click', ".navbar-brand", function() {
 $(document).ready(function() {
 
 	$('#submit').click(function() {
-	$('input').val('');
-	$('#message').val('');
-	alert('תודה על בקשתך, ניצור עמך קשר בהקדם');
+	
 		$.post("http://ineng.eu5.org/send.php", $("#mycontactform").serialize(), function(response) {
 			// $('#success').html(response);
 			//$('#success').hide('slow');
 		});
 		return false;
-	
+	$('input').val('');
+	$('#message').val('');
+	alert('תודה על בקשתך, ניצור עמך קשר בהקדם');
 	});
 
 }); 
