@@ -34,10 +34,11 @@ $(document).ready(function() {
 			// $('#success').html(response);
 			//$('#success').hide('slow');
 		});
-		return false;
+		
 	$('input').val('');
 	$('#message').val('');
 	alert('תודה על בקשתך, ניצור עמך קשר בהקדם');
+	return false;
 	});
 
 }); 
