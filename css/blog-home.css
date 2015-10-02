@@ -89,6 +89,10 @@ input {
 	line-height: 30px;
 	font-size: 18px;
 }
+#submit{
+	color: #000000;
+	font-weight: 600;
+}
 #message {
 	border-radius: 10px;
 	margin: 5px 3px 5px 5px;
