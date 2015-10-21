@@ -109,6 +109,9 @@ input {
 	margin: 40px 0 20px;
 	border-bottom: 1px solid #eee;
 }
+.img-mobile{
+	display:none;
+}
 @media screen and (max-width: 600px) {
 	.INeng > p {
 		line-height: 30px;
@@ -126,6 +129,25 @@ input {
 		float: none;
 	}
 	.fotorama {
+	}
+	.img-responsive{
+		display:none;
+	}
+	.img-mobile{
+		    background-image: url('../images/logo.png');
+    display: block;
+    background-size: 102% 114%;
+    height: 140px;
+    background-repeat: no-repeat;
+	}
+	.responssive{
+		display: none;
+	}
+	h1{
+		font-size:27px;
+	}
+	h2{
+		font-size: 22px;
 	}
 }
 
