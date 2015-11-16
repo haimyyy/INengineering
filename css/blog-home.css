@@ -3,7 +3,7 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
+/*color:rgb(56,187,160);*/
 body {
 	padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 	direction: rtl;
@@ -32,6 +32,7 @@ footer {
 }
 .img-responsive {
 	width: 100%;
+	    border: 2px solid rgb(56,160,170);
 }
 .col-md-8 > section:first-child {
 	display: block;
@@ -41,6 +42,7 @@ footer {
 }
 .page-header {
 	margin-top: 5px;
+	    border-bottom: 1px solid rgb(56,160,170);
 }
 .fotorama__nav__frame.fotorama__active .fotorama__dot {
 	width: 12px !important;
@@ -54,6 +56,9 @@ footer {
 .fotorama__dot {
 	width: 10px !important;
 	height: 10px !important;
+}
+hr{
+    border-top: 1px solid rgb(56,160,170);
 }
 input {
 	border-radius: 10px;
@@ -75,7 +80,7 @@ input {
 }
 .contact {
 	font-size: 22px;
-	font-weight: 500;
+	font-weight: 600;
 }
 .contactUs > p {
 
@@ -90,8 +95,9 @@ input {
 	font-size: 18px;
 }
 #submit{
-	color: #000000;
-	font-weight: 600;
+color: #ffffff;
+    font-weight: 600;
+    background: rgb(56,160,170);
 }
 #message {
 	border-radius: 10px;
@@ -103,14 +109,28 @@ input {
 }
 .well {
 	float: right;
+	    background-color: #D8D8D8;
 }
 .gallery > h2 {
 	padding-bottom: 9px;
 	margin: 40px 0 20px;
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid rgb(56,160,170);
 }
 .img-mobile{
 	display:none;
+}
+.navbar-inverse {
+    background-color: rgb(56,160,170);
+    border-color: rgb(56,160,170);
+}
+.navbar-inverse .navbar-brand {
+    color: #ffffff;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #FFFFFF;
+}
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #494949;
 }
 @media screen and (max-width: 600px) {
 	.INeng > p {
