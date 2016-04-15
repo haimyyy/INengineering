@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
-		
+
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="">
 		<meta name="author" content="">
@@ -64,17 +64,44 @@
 		</nav>
 		<div class="container">
 			<header>
-				<a href="http://in-eng.co.il/#"><div class="img-mobile" ></div></a>
-				<a href="http://in-eng.co.il/#"><img class="img-responsive" src="images/logo2.png" alt="InEngineering In-eng"></a>
-				<hr>
+				<div class="col-md-8">
+					<a href="http://in-eng.co.il/#" ><img src="images/logo3.png" alt="InEngineering In-eng" class="img-mobile"></a>
+					<a href="http://in-eng.co.il/#"><img class="img-responsive" src="images/logo2.png" alt="InEngineering In-eng"></a>
+				</div>
+
+				<div class="col-md-4">
+
+					<!-- Side Widget Well -->
+					<div class="well">
+						<h4 class="contact">צרו קשר ונחזור בהקדם</h4>
+						<form action="" method="post" id="mycontactform">
+							<input type="text" name="name" id="name" placeholder="הכנס שם מלא.." required/>
+							<input type="text" name="phone" id="phone" placeholder="מספר פלאפון.." required/>
+							<input type="text"  name="email" id="email" placeholder="אימייל.." required/>
+							<textarea name="message" id="message" placeholder="רשום את בקשתך.." ></textarea>
+							<input type="button" value="שלח" id="submit" />
+						</form>
+					</div>
+
+				</div>
+
 			</header>
 			<div class="row">
-
 				<!-- Blog Entries Column -->
 				<div class="col-md-8">
 
 					<section class="INeng">
 						<h1 class="page-header responssive"><b> IN הנדסה </b></h1>
+						<h3><b>IN הנדסה - </b> חברה המנוהלת ע"י ניר ועידן, בעלי תואר הנדסאי	 . </h3>
+						<p>
+							אנו מבצעים עבודות שלד, גמר ותוספות למבנים קיימים.
+							משך פעילותינו היא למעלה מעשור, הניסיון עתיר השנים מאפשר לנו להציע למאגר הרחב של לקוחותינו, מהמגזר הפרטי והציבורי, ביצוע מדויק ומקצועי, עמידה בלוחות זמנים ושירות מחויך עד למסירת המפתח.
+
+						</p>
+
+					</section>
+					<section class="about" >
+						<h1 class="page-header"> אודות החברה </h1>
 						<p>
 							אנו חברה המבצעת עבודות שלד וגמר משלב התכנון ועד למסירת מפתח.
 							<br />
@@ -98,20 +125,11 @@
 							<b>פרטים טכניים עלינו :</b>
 							<br />
 
-							אנו מבצעים עבודות שלד וגמר  באזור גוש דן ובשפלה 
+							אנו מבצעים עבודות שלד וגמר  באזור גוש דן ובשפלה
 							<br />
 							 קבלן רשום  מספר - 27980
 							<br />
 							קבלן מוכר לביצוע עבודות ממשלתיות
-						</p>
-					</section>
-					<section class="about" >
-						<h1 class="page-header"> אודות החברה </h1>
-						<h3><b>IN הנדסה - </b> חברה המנוהלת ע"י ניר ועידן, בעלי תואר הנדסאי	 . </h3>
-						<p>
-							אנו מבצעים עבודות שלד, גמר ותוספות למבנים קיימים.
-							משך פעילותינו היא למעלה מעשור, הניסיון עתיר השנים מאפשר לנו להציע למאגר הרחב של לקוחותינו, מהמגזר הפרטי והציבורי, ביצוע מדויק ומקצועי, עמידה בלוחות זמנים ושירות מחויך עד למסירת המפתח.
-
 						</p>
 					</section>
 					<section class="gallery ">
@@ -170,23 +188,12 @@
 				</div>
 
 				<!-- Blog Sidebar Widgets Column -->
-				<div class="col-md-4">
-
-					<!-- Side Widget Well -->
-					<div class="well">
-						<h4 class="contact">צרו קשר ונחזור בהקדם</h4>
-						<form action="" method="post" id="mycontactform">
-							<input type="text" name="name" id="name" placeholder="הכנס שם מלא.." required/>
-							<input type="text" name="phone" id="phone" placeholder="מספר פלאפון.." required/>
-							<input type="text"  name="email" id="email" placeholder="אימייל.." required/>
-							<textarea name="message" id="message" placeholder="רשום את בקשתך.." ></textarea>
-							<input type="button" value="שלח" id="submit" />
-						</form>
-					</div>
-
-				</div>
+				<section>
+					<img src="images/BG.jpg" alt="IN הנדסה" class="decoratedImage"/>
+				</section>
 
 			</div>
+
 			<!-- /.row -->
 
 			<!-- Footer -->
@@ -196,11 +203,11 @@
 				  <span>IN</span>
 				  <ul class="ulFooter">
 				  	<li>ביצוע פרויקטים</li>
-				  	<li><img src="images/squre.PNG" /></li>
+				  	<li class="bullet"></li>
 				  	<li>תוספות בנייה</li>
-				  	<li class="mobile_foot"><img src="images/squre.PNG" /></li>
+				  	<li class="mobile_foot bullet"></li>
 				  	<li>מרפסות</li>
-				  	<li><img src="images/squre.PNG" /></li>
+				  	<li class="bullet"></li>
 				  	<li class="four">שלד וגמר</li>
 				  	<li>עידן &nbsp; 0527496662 </li>
 				  	<li>ניר &nbsp; 0502810128 </li>
